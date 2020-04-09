@@ -131,6 +131,8 @@ void WakeUp(void)
 
 int ConvertStickToPWMSignal(u16 Center, int StickMeassurement)
 {
+  //Input: 0 - 1023
+  //Output: -127 - 127 
   u32 TempStick = (StickMeassurement / 2) * 2;
   // Serial.print("TempStick Stick: ");
   // Serial.println(TempStick);
